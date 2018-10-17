@@ -1,4 +1,4 @@
-# Battery stats for Surface Pro 2017
+# Battery stats for Surface Pro 2017 running Elementary OS
 
 ![](https://raw.githubusercontent.com/adi-ida/surfacepro-battery/master/battery_stats.png)
 
