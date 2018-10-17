@@ -1,4 +1,4 @@
 {'Percentage': '58%',
- 'Remaining': '1.32h',
+ 'Remaining': '4.32h',
  'State': 'Charging',
  'Voltage': '8.151V'}
