@@ -18,7 +18,7 @@ APPINDICATOR_ID1 = 'surface-battery1'
 def main():
     
 
-    with open('/home/battery-stats/battery_stats.txt') as f:
+    with open('/home/adi/battery-stats/battery_stats.txt') as f:
         text = f.read()
         json_text=text.replace("'", '"')
         data=json.loads(json_text)
@@ -26,13 +26,13 @@ def main():
 
     #pprint(data['Percentage'])
  
-    indicator = appindicator.Indicator.new(APPINDICATOR_ID, os.path.abspath('/home/battery-stats/nothing.png'), appindicator.IndicatorCategory.SYSTEM_SERVICES)
+    indicator = appindicator.Indicator.new(APPINDICATOR_ID, os.path.abspath('/home/adi/battery-stats/nothing.png'), appindicator.IndicatorCategory.SYSTEM_SERVICES)
     indicator.set_status(appindicator.IndicatorStatus.ACTIVE)
     indicator.set_label("T: "+data['Remaining'],"")
     indicator.set_menu(build_menu())
     notify.init(APPINDICATOR_ID)
 
-    indicator1 = appindicator.Indicator.new(APPINDICATOR_ID1, os.path.abspath('/home/battery-stats/nothing.png'), appindicator.IndicatorCategory.SYSTEM_SERVICES)
+    indicator1 = appindicator.Indicator.new(APPINDICATOR_ID1, os.path.abspath('/home/adi/battery-stats/nothing.png'), appindicator.IndicatorCategory.SYSTEM_SERVICES)
     indicator1.set_status(appindicator.IndicatorStatus.ACTIVE)
     indicator1.set_label("B: "+data['Percentage'],"")
     indicator1.set_menu(build_menu())
