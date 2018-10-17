@@ -8,8 +8,8 @@ Only thing that was stopping me from using my Surface as my daily driver was the
 
 ## How to use it 
 
-Download the files
-Add these 2 lines to your /etc/crontab (change the user and location accordingly) 
+Download the files and add these 2 lines to your /etc/crontab (change the user and location accordingly) 
+
 ```
 */10 * * * * root /usr/bin/python3 /home/adi/battery-stats/batterydump.py bat1.pretty
 * * * * * adi export DISPLAY=:0; /usr/bin/python3 /home/adi/battery-stats/batteryindicator.py
