@@ -395,7 +395,7 @@ def main():
             import pprint
             print()
             pprint.pprint(res)
-            with open("/home/adi/Downloads/battery/battery_stats.txt", "w") as fout:
+            with open("/home/battery-stats/battery_stats.txt", "w") as fout:
                 fout.write(pprint.pformat(res))
 
     finally:
